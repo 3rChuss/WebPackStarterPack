@@ -1,0 +1,23 @@
+
+$primario: rgb(0,1,1);
+$secundario: white;
+
+body {
+    background-color: $primario;
+    color: $secundario;
+}
+
+#productos {
+    list-style: none;
+    padding: 0;
+    li {
+        padding: 1rem;
+        font-size: 1.4rem;
+        color: $secundario;
+
+        &:nth-child(2n+1){
+            color: $secundario;
+            background-color: cornflowerblue;
+        }
+    }
+}
